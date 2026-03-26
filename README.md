@@ -1,0 +1,5 @@
+物理仿真模拟的通用作图平台和数据管理工具
+使用方法：
+1.让仿真类继承src/PhysicalSimu.py中的BasePhysicalSimulation，按需求复写define_parameters、get_derived_parameters、run_simulation
+2.将作图数据格式整理成src/PhysicalSimu.py中的DataGroup格式，让run_simulation输出该数据
+3.在registry.py中注册你新建的仿真类
